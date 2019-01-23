@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f35d31ccaddf43e99dabe7120e1a445b" Name="Diagram1">
+        <EntityTypeShape EntityType="BookRegistrationModel.Book" Width="1.5" PointX="7.5" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookRegistrationModel.Customer" Width="1.5" PointX="2.625" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookRegistrationModel.Registration" Width="1.5" PointX="5" PointY="2.625" IsExpanded="true" />
+        <AssociationConnector Association="BookRegistrationModel.FK__Registrati__ISBN__3C69FB99" ManuallyRouted="true" >
+          <ConnectorPoint PointX="7.5" PointY="3.6086214192708335" />
+          <ConnectorPoint PointX="7" PointY="3.6086214192708335" />
+          <ConnectorPoint PointX="7" PointY="3.6146128015350873" />
+          <ConnectorPoint PointX="6.5" PointY="3.6146128015350873" />
+        </AssociationConnector>
+        <AssociationConnector Association="BookRegistrationModel.FK__Registrat__Custo__3B75D760" ManuallyRouted="true" >
+          <ConnectorPoint PointX="4.125" PointY="3.3439630301339283" />
+          <ConnectorPoint PointX="5" PointY="3.3446057291666662" />
+        </AssociationConnector>
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
