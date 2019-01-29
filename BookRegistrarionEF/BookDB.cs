@@ -21,7 +21,7 @@ namespace BookRegistrarionEF {
             return allBooks;
         }
 
-        public static void AddBook(Book boo) {
+        public static Book AddBook(Book boo) {
             BookRegContext context = new BookRegContext();
 
             // Create insert query
@@ -30,6 +30,8 @@ namespace BookRegistrarionEF {
 
             // Executes all pending queries
             context.SaveChanges();
+
+            return boo;
         }
     }
 }

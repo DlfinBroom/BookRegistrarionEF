@@ -35,5 +35,25 @@ namespace BookRegistrarionEF {
             cbxBook.DataSource = books;
             cbxBook.DisplayMember = nameof(Book.Title);
         }
+
+        private void btnCustomer_Click(object sender, EventArgs e) {
+            Customer cus = new Customer() {
+                FirstName = "j",
+                LastName = "h",
+                DateOfBirth = new DateTime(1980, 1, 1),
+                Title = "Mr."
+            };
+
+            cus = CustomerDB.AddCustomer(cus);
+            MessageBox.Show("Customer Added!");
+
+            cus.FirstName = "jim;";
+            CustomerDB.Update(cus);
+            MessageBox.Show("Customer Updated!");
+
+            CustomerDB.DeleteCustomer(cus);
+            MessageBox.Show("Customer Deleted");
+
+        }
     }
 }

@@ -25,6 +25,7 @@
         private void InitializeComponent() {
             this.cbxBook = new System.Windows.Forms.ComboBox();
             this.btnAddBook = new System.Windows.Forms.Button();
+            this.btnCustomer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cbxBook
@@ -46,11 +47,22 @@
             this.btnAddBook.UseVisualStyleBackColor = true;
             this.btnAddBook.Click += new System.EventHandler(this.btnAddBook_Click);
             // 
+            // btnCustomer
+            // 
+            this.btnCustomer.Location = new System.Drawing.Point(161, 103);
+            this.btnCustomer.Name = "btnCustomer";
+            this.btnCustomer.Size = new System.Drawing.Size(100, 35);
+            this.btnCustomer.TabIndex = 2;
+            this.btnCustomer.Text = "Test Customer";
+            this.btnCustomer.UseVisualStyleBackColor = true;
+            this.btnCustomer.Click += new System.EventHandler(this.btnCustomer_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(400, 450);
+            this.Controls.Add(this.btnCustomer);
             this.Controls.Add(this.btnAddBook);
             this.Controls.Add(this.cbxBook);
             this.Name = "Form1";
@@ -64,6 +76,7 @@
         private System.Windows.Forms.ComboBox cbxBooks;
         private System.Windows.Forms.ComboBox cbxBook;
         private System.Windows.Forms.Button btnAddBook;
+        private System.Windows.Forms.Button btnCustomer;
     }
 }
 
